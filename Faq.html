@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5; /* لون خلفية فاتح */
+            margin: 0;
+            padding: 0;
+            color: #333; /* لون النص */
+            font-family: 'Roboto', Arial, sans-serif; /* استخدام خط مشابه */
+        }
+        header {
+            background-color: #ffffff; /* خلفية بيضاء */
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+        }
+        h1 {
+            margin: 0;
+            font-size: 1.2em; /* حجم الخط المعدل */
+            font-family: 'Billabong', cursive;
+            color: #007BFF; /* لون أزرق */
+        }
+        .logo-genz {
+            border: 1.5px solid #007BFF; /* حدود زرقاء */
+            padding: 3px 6px; /* تقليل الحشو */
+            display: inline-block;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+        .faq-button {
+            color: #007BFF; /* لون أزرق */
+            font-size: 0.9em; /* حجم خط أقل */
+            padding: 3px 6px; /* تقليل الحشو */
+            border: 1px solid #007BFF; /* حدود زرقاء */
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+            background-color: transparent; /* خلفية شفافة */
+            display: flex;
+            align-items: center; 
+        }
+        .divider {
+            height: 1px;
+            background-color: #007BFF; /* حدود زرقاء */
+            width: 100%;
+            margin-top: 0; /* إزالة الهامش العلوي */
+        }
+        .divider-text {
+            text-align: center;
+            color: #333; /* لون النص */
+            font-size: 0.9em;
+            margin: 10px 0; 
+        }
+        .faq-content {
+            padding: 10px 20px; /* تقليل الحشو العلوي */
+            font-size: 0.85em;
+        }
+        .faq-content h2 {
+            font-size: 1.2em; /* حجم أقل لعناوين الأسئلة الشائعة */
+        }
+        footer {
+            text-align: center;
+            color: #333; /* لون النص */
+            margin: 20px 0;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
 
+<header>
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1 class="logo-genz" translate="no">GZ</h1>
+    </a>
+    <div style="display: flex; align-items: center;">
+        <div class="faq-button">الأسئلة الشائعة</div>
+    </div>
+</header>
+
+<div class="divider"></div>
+<div class="divider-text">الأسئلة الشائعة - FAQ</div>
+<div class="divider"></div>
+
+<div class="faq-content">
+    <h2>1. ما هو GZ وكيف يمكن استخدامه؟</h2>
+    <p>G-Z هو تطبيق ويب مجاني تمامًا يسمح للمستخدمين بإدخال تاريخ ميلادهم، وبلد الميلاد، والجنس دون تسجيل مسبق. تم تصميمه لتوليد إحصاءات عالمية ووطنية حول المواليد، بما في ذلك:</p>
+    <ul>
+        <li>المواليد حسب اليوم والشهر والسنة.</li>
+        <li>التوزيع حسب البلد والجنس والعمر.</li>
+    </ul>
+    <p>الهدف الرئيسي هو توفير بيانات ديموغرافية متاحة لفهم أفضل للاتجاهات السكانية العالمية.</p>
+
+    <h2>2. هل بياناتي مجهولة الهوية؟</h2>
+    <p>نعم، بياناتك مجهولة الهوية تمامًا. لقد صممنا G-Z لضمان ما يلي:</p>
+    <ul>
+        <li>لا يمكن تتبع أي بيانات إلى مستخدم فردي.</li>
+        <li>لا نجمع معلومات يمكن أن تحدد من أرسل ماذا. كن مطمئنًا، هويتك محمية، وبياناتك تجمع على الفور.</li>
+    </ul>
+
+    <h2>3. كيف يمكنني معرفة ما إذا كانت بياناتي قد تم إرسالها؟</h2>
+    <p>بمجرد إرسال بياناتك:</p>
+    <ul>
+        <li>سيتغير لون زر الإرسال: برتقالي أثناء الإرسال وأخضر عند النجاح.</li>
+        <li>سيتغير نص الزر من "إرسال" إلى "تم الإرسال".</li>
+    </ul>
+    <p>تؤكد هذه المؤشرات أنه تم أخذ بياناتك بعين الاعتبار.</p>
+
+    <h2>4. هل يمكنني تعديل أو حذف إرسالاتي؟</h2>
+    <p>نعم، لديك خيار حذف بياناتك مباشرة بعد إرسالها. إليك كيف:</p>
+    <ul>
+        <li>ستظهر أيقونة إعادة الضبط بعد الإرسال.</li>
+        <li>عند النقر على هذه الأيقونة، ستتم إزالة بياناتك بالكامل من خوادمنا.</li>
+    </ul>
+    <p>ومع ذلك، بمجرد إغلاق التطبيق أو انتهاء الجلسة، تصبح البيانات مجهولة الهوية بشكل لا يمكن عكسه ولا يمكن تعديلها أو حذفها. يرجى مراجعة <a href="Confidentialité.html">سياسة الخصوصية '5'</a> لمزيد من المعلومات.</p>
+
+    <h2>5. ماذا يحدث إذا قدمت معلومات غير صحيحة؟</h2>
+    <p>نشجعك على تقديم معلومات دقيقة ومُعتمَدة لضمان جودة الإحصاءات. إذا لاحظت خطأ بعد الإرسال:</p>
+    <ul>
+        <li>استخدم أيقونة إعادة الضبط لحذف بياناتك.</li>
+        <li>يمكنك بعد ذلك تقديم المعلومات المصححة.</li>
+    </ul>
+
+    <h2>6. لماذا يجب دعم GZ؟</h2>
+    <p>على الرغم من أن GZ مجاني، إلا أننا بحاجة إلى دعمك لـ:</p>
+    <ul>
+        <li>تغطية تكاليف الخوادم والبنية التحتية.</li>
+        <li>تمويل تحليلات أعمق ومشاريع مستقبلية ستفيد الجميع.</li>
+        <li>ضمان التحسين المستمر للتطبيق وميزاته.</li>
+    </ul>
+    <p>يمكنك دعم مهمتنا عبر PayPal أو بطرق أخرى.</p>
+
+    <h2>7. لماذا يجب متابعة GZ على وسائل التواصل الاجتماعي؟</h2>
+    <p>من خلال متابعتنا على وسائل التواصل الاجتماعي، يمكنك:</p>
+    <ul>
+        <li>البقاء على اطلاع بأحدث التحليلات والاتجاهات الديموغرافية.</li>
+        <li>اكتشاف التحديثات الدورية لبياناتنا العالمية.</li>
+        <li>المشاركة في مناقشات تعليمية حول قضايا السكان العالمية.</li>
+    </ul>
+    <p>بالإضافة إلى ذلك، نشارك معلومات مثيرة للاهتمام بناءً على إحصاءاتنا، ونبقيك على اطلاع بمشاريعنا الجديدة.</p>
+</div>
+
+<footer>
+    <p>©️ 2025 GZ</p>
+</footer>
+</body>
+</html>
