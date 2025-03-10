@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GZ</title>
+    <title>جي زد</title>
     <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -26,12 +26,12 @@
 
         h1 {
             margin: 0;
-            font-size: 1.5em;
+            font-size: 1.4em;
             font-family: 'Billabong', cursive;
             color: #007BFF;
             border: 2px solid #007BFF;
             padding: 3px;
-            border-radius: 5px;
+            border-radius: 10px;
         }
 
         .copyright-icon {
@@ -44,7 +44,7 @@
             height: 1px;
             background-color: #007BFF;
             width: 100%;
-            margin: 2px 0;
+            margin: 1.6px 0;
         }
 
         .button-container {
@@ -60,8 +60,8 @@
             background-color: #007BFF;
             color: white;
             border: none;
-            border-radius: 5px;
-            padding: 8px 15px;
+            border-radius: 8px;
+            padding: 6px 13px;
             margin: 0 5px;
             font-size: 0.8em;
             cursor: pointer;
@@ -78,7 +78,7 @@
         .share-button {
             background-color: #ffffff;
             border: 1px solid #007BFF;
-            border-radius: 10px;
+            border-radius: 9px;
             cursor: pointer;
             margin-left: 10px;
             padding: 5px;
@@ -93,10 +93,10 @@
 
         .category-select, .country-select {
             width: 100%;
-            padding: 8px;
-            margin: 5px 0;
+            padding: 5px;
+            margin: 4px 0;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 10px;
             background: white;
             border-top: 3px solid #007BFF;
         }
@@ -104,7 +104,7 @@
         .dashboard {
             max-width: 800px;
             margin: auto;
-            padding: 20px;
+            padding: 8px;
         }
 
         .grid {
@@ -112,14 +112,14 @@
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             gap: 10px;
             overflow: auto;
-            max-height: 400px;
+            max-height: 700px;
             overflow-y: scroll;
         }
 
         .card {
             background: white;
-            padding: 8px;
-            border-radius: 8px;
+            padding: 6px;
+            border-radius: 15px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
             color: inherit;
@@ -133,13 +133,13 @@
             background: #e9f5ff;
         }
 
-        .title { color: #666; font-size: 0.8rem; margin-bottom: 5px; }
+        .title { color: #666; font-size: 0.8rem; margin-bottom: 9px; }
         .value { font-size: 1rem; font-weight: bold; color: #007BFF; }
 
         @media (max-width: 500px) {
             .grid { grid-template-columns: repeat(2, 1fr); }
-            .title { font-size: 0.7rem; }
-            .value { font-size: 0.9rem; }
+            .title { font-size: 0.6rem; }
+            .value { font-size: 0.8rem; }
         }
 
         .modal {
@@ -156,22 +156,22 @@
 
         .modal-content {
             background-color: #fff;
-            margin: 33% auto; 
-            padding: 15px; /* تقليل الحشوة */
-            border: 1px solid #007BFF; 
-            border-radius: 10px; /* تقليل نصف القطر */
+            margin: 34% auto; 
+            padding: 14px;
+            border: 2px solid #007BFF; 
+            border-radius: 40px; 
             width: 80%; 
-            max-width: 290px; /* تقليل العرض */
+            max-width: 290px; 
             box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
 
         .close {
             color: red; 
-            font-size: 20px; /* تقليل حجم الخط */
+            font-size: 20px; 
             font-weight: bold;
             display: block; 
             text-align: center; 
-            margin-bottom: 10px; /* تقليل الهامش */
+            margin-bottom: 10px; 
             cursor: pointer;
         }
 
@@ -181,19 +181,19 @@
 
         .modal p {
             color: #333; 
-            font-size: 0.9em; /* تقليل حجم الخط */
-            text-align: center; /* محاذاة النص إلى المركز */
+            font-size: 0.8em; 
+            text-align: center; 
         }
 
         .support-button {
             background-color: #007BFF;
             color: white;
             border: none;
-            border-radius: 5px;
-            padding: 8px 12px; /* تقليل الحشوة */
+            border-radius: 10px;
+            padding: 8px 12px; 
             cursor: pointer;
-            font-size: 0.9em; /* تقليل حجم الخط */
-            margin-top: 10px; /* تقليل الهامش */
+            font-size: 0.8em; 
+            margin-top: 10px; 
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -210,14 +210,14 @@
         import { getAuth } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
 
         const firebaseConfig = {
-            apiKey: "AIzaSyBwfLgPM_tz2aFW33ck5iF9SPSxpPpYSHU",
-            authDomain: "genz-9f218.firebaseapp.com",
-            databaseURL: "https://genz-9f218-default-rtdb.firebaseio.com",
-            projectId: "genz-9f218",
-            storageBucket: "genz-9f218.appspot.com",
-            messagingSenderId: "286958713700",
-            appId: "1:286958713700:web:29d878befaf6dd8c049871",
-            measurementId: "G-P0W7NB022J"
+            apiKey: "AIzaSyCrPKQOqw4zciASa_5PbI_etfkvrBaDPDI",
+            authDomain: "genz-abb36.firebaseapp.com",
+            databaseURL: "https://genz-abb36-default-rtdb.firebaseio.com",
+            projectId: "genz-abb36",
+            storageBucket: "genz-abb36.firebasestorage.app",
+            messagingSenderId: "405021535683",
+            appId: "1:405021535683:web:ee5a28fde27f5558046176",
+            measurementId: "G-XZNQND2J00"
         };
 
         const app = initializeApp(firebaseConfig);
@@ -230,8 +230,8 @@
             const birthdatesRef = ref(db, 'birthdates');
             onValue(birthdatesRef, (snapshot) => {
                 allData = snapshot.val() || {}; // تخزين البيانات في متغير عالمي
-                console.log(allData); // عرض البيانات المستردة
-                updateCountries(); // تحديث البلدان المتاحة
+                console.log(allData); // عرض البيانات المسترجعة
+                updateCountries(); // تحديث الدول المتاحة
                 updateCards(); // تحديث البطاقات بالبيانات
             });
         }
@@ -240,13 +240,13 @@
             const countrySelect = document.getElementById('countrySelect');
             const countries = new Set();
 
-            // الحصول على البلدان الفريدة من البيانات
+            // استرجاع الدول الفريدة من البيانات
             Object.keys(allData).forEach(userId => {
                 const userData = allData[userId];
-                countries.add(userData.country); // التأكد من أن 'country' هي خاصية في userData
+                countries.add(userData.country); // التأكد من أن 'country' خاصية في userData
             });
 
-            // ملء محدد البلدان
+            // ملء محدد الدول
             countries.forEach(country => {
                 const option = document.createElement('option');
                 option.value = country;
@@ -274,7 +274,7 @@
             const selectedCategory = document.getElementById('categorySelect').value;
 
             if (Object.keys(allData).length === 0) {
-                grid.innerHTML = '<p>لم يتم العثور على بيانات.</p>';
+                grid.innerHTML = '<p>لا توجد بيانات.</p>';
                 return;
             }
 
@@ -292,11 +292,11 @@
                     } else if (selectedCategory === 'yearly') {
                         key = new Date(userData.date).getFullYear();
                     } else if (selectedCategory === 'gender') {
-                        key = userData.gender; // لفئة 'gender'
+                        key = userData.gender; // لفئة 'الجنس'
                     } else if (selectedCategory === 'age') {
                         key = calculateAge(userData.date); // حساب العمر
                     } else if (selectedCategory === 'population') {
-                        key = userData.country; // استخدام البلد للسكان
+                        key = userData.country; // لعدد السكان، استخدم الدولة
                     }
 
                     counts[key] = (counts[key] || 0) + 1;
@@ -313,11 +313,11 @@
 
             // إذا لم يتم العثور على بيانات
             if (grid.innerHTML === '') {
-                grid.innerHTML = '<p>لم يتم العثور على بيانات.</p>';
+                grid.innerHTML = '<p>لا توجد بيانات.</p>';
             }
         }
 
-        // دالة التحجيم
+        // وظيفة دباونس
         function debounce(func, wait) {
             let timeout;
             return function(...args) {
@@ -332,7 +332,7 @@
 
             countrySelect.addEventListener('change', debounce(updateCards, 300));
             categorySelect.addEventListener('change', debounce(updateCards, 300));
-            fetchData(); // تحميل البيانات عند التشغيل
+            fetchData(); // تحميل البيانات عند بدء التشغيل
 
             // فتح نافذة الدعم
             document.getElementById('supportBtn').onclick = function() {
@@ -351,7 +351,7 @@
                 };
             });
 
-            // إغلاق النافذة عند النقر خارجها
+            // إغلاق النافذة بالنقر خارجها
             window.onclick = function(event) {
                 const modals = document.querySelectorAll('.modal');
                 modals.forEach(modal => {
@@ -361,10 +361,28 @@
                 });
             };
 
-            // فتح رابط PayPal
+            // فتح رابط باي بال
             document.getElementById('paypalBtn').onclick = function() {
                 window.location.href = 'https://www.paypal.com/ncp/payment/QN7HEGCSRYJKA';
             };
+
+            // تغيير لون زر الدعم كل ثانية
+            const supportButton = document.getElementById('supportBtn');
+            let isGreenSupport = false;
+
+            setInterval(() => {
+                isGreenSupport = !isGreenSupport; // تبديل اللون
+                supportButton.style.backgroundColor = isGreenSupport ? 'green' : '#007BFF'; // تغيير اللون
+            }, 700);
+
+            // تغيير لون زر باي بال كل ثانية
+            const paypalButton = document.getElementById('paypalBtn');
+            let isGreenPaypal = false;
+
+            setInterval(() => {
+                isGreenPaypal = !isGreenPaypal; // تبديل اللون
+                paypalButton.style.backgroundColor = isGreenPaypal ? 'green' : '#007BFF'; // تغيير اللون
+            }, 10000);
         });
     </script>
 </head>
@@ -372,11 +390,11 @@
 
 <header>
     <a href="index.html" style="text-decoration: none;">
-        <h1 translate="no">GZ</h1>
+        <h1 translate="no">جي زد</h1>
     </a>
     <div class="copyright-icon">©️</div>
     <a href="Partage.html">
-        <button class="share-button" aria-label="مشاركة">
+        <button class="share-button" aria-label="شارك">
             <i class="fas fa-share-alt"></i>
         </button>
     </a>
@@ -388,8 +406,8 @@
     <button id="faqBtn" class="button" aria-label="الأسئلة الشائعة">
         <i class="fas fa-question-circle" style="margin-right: 2px;"></i> الأسئلة الشائعة
     </button>
-    <button id="supportBtn" class="button" aria-label="دعم" translate="no">
-        <i class="fas fa-hand-holding-heart" style="margin-right: 5px;"></i> دعم
+    <button id="supportBtn" class="button" aria-label="الدعم" translate="no">
+        <i class="fas fa-hand-holding-heart" style="margin-right: 5px;"></i> الدعم
     </button>
 </div>
 
@@ -398,16 +416,16 @@
 <div class="dashboard">
     <select class="country-select" aria-label="اختر دولة" id="countrySelect">
         <option value="">جميع الدول</option>
-        <!-- خيارات الدول ستضاف ديناميكيًا -->
+        <!-- خيارات الدول ستضاف ديناميكياً -->
     </select>
 
     <select class="category-select" aria-label="اختر فئة" id="categorySelect">
-        <option value="daily">المواليد حسب اليوم</option>
-        <option value="monthly">المواليد حسب الشهر</option>
-        <option value="yearly">المواليد حسب السنة</option>
+        <option value="daily">الولادات حسب اليوم</option>
+        <option value="monthly">الولادات حسب الشهر</option>
+        <option value="yearly">الولادات حسب السنة</option>
         <option value="gender">الجنس</option>
         <option value="age">الأعمار</option>
-        <option value="population">السكان</option> <!-- إضافة خيار السكان -->
+        <option value="population">السكان</option>
     </select>
 
     <div class="grid" id="grid">
@@ -415,11 +433,11 @@
     </div>
 </div>
 
-<!-- نافذة دعم -->
+<!-- نافذة الدعم -->
 <div id="supportModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <p>شكرًا لدعمك G-Z! كل دعم له أهمية. بمساعدتك، يمكننا الاستمرار في تطوير هذا المشروع المثير، وإنشاء تحليلات مبتكرة، وتقديم إحصاءات مجانية لجمهور عالمي.</p>
+        <p>شكراً لدعمك جي زد! كل دعم يُحتسب. بمساعدتك، سنتمكن من الاستمرار في تطوير هذا المشروع المثير، وإنشاء تحليلات مبتكرة، وتوفير إحصائيات مجانية لجمهور عالمي.</p>
         <button id="paypalBtn" class="support-button">أدعم الآن</button>
     </div>
 </div>
@@ -428,8 +446,9 @@
 <div id="faqModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        يتم تحديث الإحصاءات تلقائيًا مع كل إدخال في الجداول.
+        يتم تحديث الإحصائيات تلقائيًا مع كل تقديم في الجداول.
     </div>
 </div>
+
 </body>
 </html>
