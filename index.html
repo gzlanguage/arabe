@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GZ</title>
-     <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/genz-abb36.firebasestorage.app/o/photo_2025-03-09_13-00-43.jpg?alt=media&token=e3d3c543-164c-4c79-8cd1-0a9c710fb002"> <!-- الملف الشخصي -->
+    <title>جي-زد</title>
+     <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/genz-abb36.firebasestorage.app/o/photo_2025-03-09_13-00-43.jpg?alt=media&token=e3d3c543-164c-4c79-8cd1-0a9c710fb002"> <!-- الصورة الشخصية -->
     <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -14,7 +14,6 @@
             padding: 0;
             background-color: white;
             position: relative;
-            direction: rtl;
         }
         header {
             background-color: white;
@@ -62,6 +61,7 @@
         }
         .button i {
             margin-left: 2px;
+            margin-right: 0;
         }
         .button#statistiquesButton {
             border-bottom: 1px solid lawngreen;
@@ -175,7 +175,7 @@
             color: white;
         }
 
-        /* نمط النافذة المنبثقة */
+        /* تنسيقات للمودال */
         .modal {
             display: none;
             position: fixed;
@@ -270,39 +270,39 @@
 
     setInterval(() => {
       button.style.borderBottom = `4px solid ${colors[index]}`;
-      index = (index + 1) % colors.length; // التنقل عبر الألوان
+      index = (index + 1) % colors.length; // التبديل بين الألوان
     }, 400); // تغيير اللون كل ثانية
   </script>
 
   <div class="divider"></div>
 
   <div class="notification">
-    <span class="notification-text">لنكتشف معاً أسرار أجيالنا.</span>
+    <span class="notification-text">دعنا نكتشف أسرار أجيالنا معًا.</span>
     <div class="new-message-badge"></div>
   </div>
 
   <div class="divider"></div>
 
   <div class="footer-title">
-    انضم إلينا لاكتشاف أسرار جيلنا بنقرات قليلة!
+    انضم إلينا لاكتشاف أسرار جيلنا بمجرد بضع نقرات!
   </div>
 
   <input type="date" class="date-input" id="birthdate" placeholder="اختر تاريخ ميلادك" min="1900-01-01" max="" />
   <select class="country-select" id="countrySelect">
-    <option value="" disabled selected>اختر بلد الميلاد</option>
+    <option value="" disabled selected>اختر بلد ميلادك</option>
   </select>
   <p style="text-align: center; color: black; font-size: 0.7em; margin-top: 5px; text-decoration: underline; text-decoration-color: rgb(0, 123, 191);">
     بالإرسال، أنت توافق على شروط الاستخدام.
   </p>
   <button class="submit-button" type="submit">إرسال</button>
 
-  <i class="fas fa-redo reset-icon" id="resetButton" title="إعادة ضبط"></i>
+  <i class="fas fa-redo reset-icon" id="resetButton" title="إعادة تعيين"></i>
 
   <div class="divider"></div>
 
   <div class="rectangle">
     <div class="text-line bold" style="font-size: 1em; color: #0056b3;">كيف يعمل؟</div>
-    <div class="text-line">يتوفر لك خياران: الأول هو تقويم لاختيار تاريخ ميلادك، والثاني هو محدد لبلد ميلادك. بعد إجراء الاختيارات، انقر على "إرسال". بعد ذلك، سيُطلب منك تحديد جنسك؛ انقر على هذا الخيار لتصبح مساهماً. أخيراً، انقر على زر "استكشاف" الذي يومض باللون الأخضر. ستكتشف بعد ذلك محددين جديدين: تنقل وفقاً لتفضيلاتك لاستكشاف الإحصائيات.</div>
+    <div class="text-line">هناك خياران متاحان لك: الأول هو تقويم لاختيار تاريخ ميلادك، والثاني هو محدد لبلد ميلادك. بمجرد إجراء اختياراتك، انقر على "إرسال". بعد ذلك، سيُطلب منك تحديد جنسك؛ انقر على هذا الخيار لتصبح مساهمًا. وأخيرًا، انقر على زر "استكشاف" الذي يومض باللون الأخضر. ستكتشف بعد ذلك محددين جديدين: تنقل وفقًا لتفضيلاتك لاستكشاف الإحصاءات.</div>
   </div>
 
   <div class="text-line" style="text-align: center; color: black;">
@@ -331,31 +331,31 @@
     </div>
   </footer>
 
-  <!-- مودال -->
+  <!-- المودال -->
   <div id="genderModal" class="modal">
     <div class="modal-content">
       <div class="modal-header">ما هو جنسك؟</div>
       
       <div class="gender-category">الجنس الثنائي</div>
       <div class="modal-footer">
-        <button class="close-button gender-option" value="Man">Man</button>
-        <button class="close-button gender-option" value="Woman">Woman</button>
+        <button class="close-button gender-option" value="Man">رجل</button>
+        <button class="close-button gender-option" value="Woman">امرأة</button>
       </div>
       
       <div class="gender-category">الجنس غير الثنائي</div>
       <div class="modal-footer">
-        <button class="close-button gender-option" value="Non-binary">Non-binary</button>
-        <button class="close-button gender-option" value="Genderqueer">Genderqueer</button>
-        <button class="close-button gender-option" value="Genderfluid">Genderfluid</button>
-        <button class="close-button gender-option" value="Agender">Agender</button>
+        <button class="close-button gender-option" value="Non-binary">غير ثنائي</button>
+        <button class="close-button gender-option" value="Genderqueer">كوير جندر</button>
+        <button class="close-button gender-option" value="Genderfluid">جندر فلويد</button>
+        <button class="close-button gender-option" value="Agender">لا جنسي</button>
       </div>
       
       <div class="gender-category">هويات جنسية أخرى</div>
       <div class="modal-footer">
-        <button class="close-button gender-option" value="Transgender">Transgender</button>
-        <button class="close-button gender-option" value="Two-Spirit">Two-Spirit</button>
-        <button class="close-button gender-option" value="Bigender">Bigender</button>
-        <button class="close-button gender-option" value="Androgyne">Androgyne</button>
+        <button class="close-button gender-option" value="Transgender">متحول جنسيًا</button>
+        <button class="close-button gender-option" value="Two-Spirit">ثنائي الروح</button>
+        <button class="close-button gender-option" value="Bigender">ثنائي الجنس</button>
+        <button class="close-button gender-option" value="Androgyne">أندروجين</button>
       </div>
     </div>
   </div>
@@ -379,7 +379,7 @@
     const database = getDatabase(app);
     const auth = getAuth(app);
 
-    // مصادقة مجهولة
+    // المصادقة المجهولة
     signInAnonymously(auth)
       .then((userCredential) => {
         const user = userCredential.user;
@@ -420,12 +420,12 @@
 
       if (birthdate && country) {
         const submitButton = document.querySelector('.submit-button');
-        submitButton.textContent = "الرجاء الانتظار...";
+        submitButton.textContent = "يرجى الانتظار...";
         submitButton.style.backgroundColor = 'orange';
 
         document.getElementById('genderModal').style.display = 'block';
       } else {
-        alert("الرجاء إدخال تاريخ الميلاد واختيار البلد!");
+        alert("يرجى إدخال تاريخ الميلاد واختيار البلد!");
       }
     });
 
@@ -475,7 +475,7 @@
             document.getElementById('resetButton').style.display = "none";
           })
           .catch((error) => {
-            console.error("خطأ أثناء إعادة ضبط البيانات: ", error);
+            console.error("خطأ أثناء إعادة تعيين البيانات: ", error);
           });
       }
     });
