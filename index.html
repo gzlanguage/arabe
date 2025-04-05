@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>جي-زد</title>
+    <title>GZ</title>
      <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/genz-abb36.firebasestorage.app/o/photo_2025-03-09_13-00-43.jpg?alt=media&token=e3d3c543-164c-4c79-8cd1-0a9c710fb002"> <!-- الصورة الشخصية -->
     <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -61,7 +61,6 @@
         }
         .button i {
             margin-left: 2px;
-            margin-right: 0;
         }
         .button#statistiquesButton {
             border-bottom: 1px solid lawngreen;
@@ -175,7 +174,7 @@
             color: white;
         }
 
-        /* تنسيقات للمودال */
+        /* نمط النافذة المنبثقة */
         .modal {
             display: none;
             position: fixed;
@@ -193,9 +192,8 @@
             padding: 18px;
             border: 1px solid #007bff;
             border-radius: 60px;
-            width: 180px;
-            font-size: 0.3px;
-            max-width: 70%;
+            width: 250px;
+            max-width: 80%;
             text-align: center;
             max-height: 60vh;
             overflow-y: auto;
@@ -233,10 +231,11 @@
         .gender-category {
             font-weight: bold;
             color: #007bff;
-            margin-top: 2px;
-            margin-bottom: 5px;
+            margin-top: 12px;
+            margin-bottom: 8px;
             text-align: center;
             width: 100%;
+            font-size: 1.1em;
         }
     </style>
 </head>
@@ -256,8 +255,8 @@
   <div class="button-container">
     <a class="button" href="Faq.html" translate="yes"><i class="fas fa-question-circle"></i>الأسئلة الشائعة</a>
     <a class="button" href="Statistiques.html" id="statistiquesButton">
-      <i class="fas fa-chart-bar"></i> استكشاف</a>
-    <a class="button" href="Contact.html"><i class="fas fa-envelope"></i>اتصل بنا</a>
+      <i class="fas fa-chart-bar"></i> اكتشف</a>
+    <a class="button" href="Contact.html"><i class="fas fa-envelope"></i>تواصل معنا</a>
     <a class="button" href="Terms.html"><i class="fas fa-file-contract"></i>الشروط</a>
     <a class="button" href="Confidentialité.html"><i class="fas fa-file-contract"></i>الخصوصية</a>
   </div>
@@ -271,20 +270,20 @@
     setInterval(() => {
       button.style.borderBottom = `4px solid ${colors[index]}`;
       index = (index + 1) % colors.length; // التبديل بين الألوان
-    }, 400); // تغيير اللون كل ثانية
+    }, 400); // تغيير اللون كل 400 مللي ثانية
   </script>
 
   <div class="divider"></div>
 
   <div class="notification">
-    <span class="notification-text">دعنا نكتشف أسرار أجيالنا معًا.</span>
+    <span class="notification-text">لنكتشف معًا أسرار جيلنا</span>
     <div class="new-message-badge"></div>
   </div>
 
   <div class="divider"></div>
 
   <div class="footer-title">
-    انضم إلينا لاكتشاف أسرار جيلنا بمجرد بضع نقرات!
+    انضم إلينا لتكتشف أسرار جيلنا ببضع نقرات!
   </div>
 
   <input type="date" class="date-input" id="birthdate" placeholder="اختر تاريخ ميلادك" min="1900-01-01" max="" />
@@ -292,21 +291,21 @@
     <option value="" disabled selected>اختر بلد ميلادك</option>
   </select>
   <p style="text-align: center; color: black; font-size: 0.7em; margin-top: 5px; text-decoration: underline; text-decoration-color: rgb(0, 123, 191);">
-    بالإرسال، أنت توافق على شروط الاستخدام.
+    بإرسال البيانات، فإنك توافق على شروط الاستخدام الخاصة بنا
   </p>
-  <button class="submit-button" type="submit">إرسال</button>
+  <button class="submit-button" type="submit">إرسال البيانات</button>
 
-  <i class="fas fa-redo reset-icon" id="resetButton" title="إعادة تعيين"></i>
+  <i class="fas fa-redo reset-icon" id="resetButton" title="إعادة ضبط"></i>
 
   <div class="divider"></div>
 
   <div class="rectangle">
     <div class="text-line bold" style="font-size: 1em; color: #0056b3;">كيف يعمل؟</div>
-    <div class="text-line">هناك خياران متاحان لك: الأول هو تقويم لاختيار تاريخ ميلادك، والثاني هو محدد لبلد ميلادك. بمجرد إجراء اختياراتك، انقر على "إرسال". بعد ذلك، سيُطلب منك تحديد جنسك؛ انقر على هذا الخيار لتصبح مساهمًا. وأخيرًا، انقر على زر "استكشاف" الذي يومض باللون الأخضر. ستكتشف بعد ذلك محددين جديدين: تنقل وفقًا لتفضيلاتك لاستكشاف الإحصاءات.</div>
+    <div class="text-line"> لديك خياران: الأول هو تقويم لاختيار تاريخ ميلادك، والثاني هو اختيار البلد الذي ولدت فيه. بعد ذلك، انقر على "إرسال البيانات". ثم سيُطلب منك تحديد جنسك؛ انقر على هذا الخيار للمشاركة. أخيرًا، انقر على زر "اكتشف" الذي يومض باللون الأخضر. ستجد خيارين جديدين: تصفح وفقًا لتفضيلاتك لاستكشاف الإحصائيات </div>
   </div>
 
   <div class="text-line" style="text-align: center; color: black;">
-    <span style="color: #007bff;">_____</span> لا تفوت أي شيء <span style="color: #007bff;">_____</span>
+    <span style="color: #007bff;">_____</span> لا تفوت المهم <span style="color: #007bff;">_____</span>
   </div>
 
   <footer>
@@ -331,28 +330,28 @@
     </div>
   </footer>
 
-  <!-- المودال -->
+  <!-- النافذة المنبثقة -->
   <div id="genderModal" class="modal">
     <div class="modal-content">
       <div class="modal-header">ما هو جنسك؟</div>
       
       <div class="gender-category">الجنس الثنائي</div>
       <div class="modal-footer">
-        <button class="close-button gender-option" value="Man">رجل</button>
-        <button class="close-button gender-option" value="Woman">امرأة</button>
+        <button class="close-button gender-option" value="Man">ذكر</button>
+        <button class="close-button gender-option" value="Woman">أنثى</button>
       </div>
       
       <div class="gender-category">الجنس غير الثنائي</div>
       <div class="modal-footer">
         <button class="close-button gender-option" value="Non-binary">غير ثنائي</button>
-        <button class="close-button gender-option" value="Genderqueer">كوير جندر</button>
+        <button class="close-button gender-option" value="Genderqueer">جندر كوير</button>
         <button class="close-button gender-option" value="Genderfluid">جندر فلويد</button>
         <button class="close-button gender-option" value="Agender">لا جنسي</button>
       </div>
       
       <div class="gender-category">هويات جنسية أخرى</div>
       <div class="modal-footer">
-        <button class="close-button gender-option" value="Transgender">متحول جنسيًا</button>
+        <button class="close-button gender-option" value="Transgender">متحول جنسياً</button>
         <button class="close-button gender-option" value="Two-Spirit">ثنائي الروح</button>
         <button class="close-button gender-option" value="Bigender">ثنائي الجنس</button>
         <button class="close-button gender-option" value="Androgyne">أندروجين</button>
@@ -386,7 +385,7 @@
         console.log("تم توصيل المستخدم: ", user.uid);
       })
       .catch((error) => {
-        console.error("خطأ أثناء تسجيل الدخول المجهول: ", error);
+        console.error("حدث خطأ أثناء تسجيل الدخول المجهول: ", error);
       });
 
     const today = new Date().toISOString().split("T")[0];
@@ -410,7 +409,7 @@
           countrySelect.appendChild(option);
         });
       })
-      .catch(error => console.error('خطأ في تحميل البلدان:', error));
+      .catch(error => console.error('حدث خطأ في تحميل قائمة البلدان:', error));
 
     let lastSubmittedId = null;
 
@@ -425,11 +424,11 @@
 
         document.getElementById('genderModal').style.display = 'block';
       } else {
-        alert("يرجى إدخال تاريخ الميلاد واختيار البلد!");
+        alert("يرجى إدخال تاريخ ميلادك واختيار بلدك!");
       }
     });
 
-    // إضافة مستمعي الأحداث لجميع أزرار خيارات الجنس
+    // إضافة مستمعي الأحداث لجميع أزرار اختيار الجنس
     document.querySelectorAll('.gender-option').forEach(button => {
       button.addEventListener('click', function() {
         submitData(this.value);
@@ -451,14 +450,14 @@
 
       newEntryRef.then(() => {
         submitButton.style.backgroundColor = 'green';
-        submitButton.textContent = "تم الإرسال";
+        submitButton.textContent = "تم الإرسال بنجاح";
         submitButton.disabled = true;
         document.getElementById('resetButton').style.display = "block";
         document.getElementById('genderModal').style.display = 'none';
       }).catch((error) => {
         submitButton.style.backgroundColor = 'red';
-        submitButton.textContent = "خطأ";
-        console.error("خطأ أثناء الإرسال: ", error);
+        submitButton.textContent = "حدث خطأ";
+        console.error("حدث خطأ أثناء إرسال البيانات: ", error);
       });
     }
 
@@ -469,25 +468,25 @@
             document.getElementById('birthdate').value = '';
             document.getElementById('countrySelect').value = '';
             const submitButton = document.querySelector('.submit-button');
-            submitButton.textContent = "إرسال";
+            submitButton.textContent = "إرسال البيانات";
             submitButton.style.backgroundColor = '#007bff';
             submitButton.disabled = false;
             document.getElementById('resetButton').style.display = "none";
           })
           .catch((error) => {
-            console.error("خطأ أثناء إعادة تعيين البيانات: ", error);
+            console.error("حدث خطأ أثناء إعادة ضبط البيانات: ", error);
           });
       }
     });
 
-    // إغلاق المودال بالنقر خارجه
+    // إغلاق النافذة المنبثقة بالنقر خارجها
     window.onclick = function(event) {
       const modal = document.getElementById('genderModal');
       if (event.target == modal) {
         modal.style.display = "none";
         const submitButton = document.querySelector('.submit-button');
         submitButton.style.backgroundColor = 'red';
-        submitButton.textContent = "خطأ";
+        submitButton.textContent = "حدث خطأ";
       }
     };
   </script>
